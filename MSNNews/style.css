@@ -4,12 +4,30 @@
 }
 body {
     background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .wrap {
-    max-width: 1600px;
-    height: 1000px;
+    width: 1600px;
+    height: 10000px;
     background-color: #242424;
     margin: auto;
     border-radius: 10px;
-    box-shadow: 0px 0px 50px 50px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 50px 70px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 1600px) {
+    .wrap {
+        width: 100%;
+    }
+}
+@media (max-width: 1567px) {
+    .wrap {
+        width: 1300px;
+    }
+}
+@media (max-width: 1255px) {
+    .wrap {
+        width: 950px;
+    }
 }

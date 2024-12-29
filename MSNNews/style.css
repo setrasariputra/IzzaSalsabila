@@ -8,6 +8,28 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+.topbar {
+    background-color: red;
+    height: 50px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.menu-apps {
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+}
+.search-box {
+    width: 100%;
+    height: 50px;
+    background-color: green;
+}
+.personalization {
+    width: 100%;
+    height: 50px;
+    background-color: yellow;
+}
 .wrap {
     width: 1600px;
     height: 10000px;
@@ -29,5 +51,15 @@ body {
 @media (max-width: 1255px) {
     .wrap {
         width: 950px;
+    }
+}
+@media (max-width: 943px) {
+    .wrap {
+        width: 650px;
+    }
+}
+@media (max-width: 631px) {
+    .wrap {
+        width: 350px;
     }
 }
